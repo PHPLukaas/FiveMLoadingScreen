@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Loading Screen - NOM DU SERVEUR</title>
+        <meta charset="utf-8">
+        <!-- Feuilles de styles -->
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <div id="background">
+        </div>
+
+        <div id="logo">
+            <div id="logs" class="logs">
+                Erreur lors de l'initialisation des logs.
+            </div>
+
+            <div id="debug" class="logs logs-top-right">
+            </div>
+            
+        </div>
+
+    </body>
+
+    <audio id="musique" autoplay loop>
+        <source src="music/dua-lipa-levitating-feat-dababy-don-diablo-remix-official-audio.mp3" type="audio/mp3">
+   </audio>
+   <script>
+        var son = document.getElementById("musique");
+        son.volume = 0.2
+   </script>
+
+   <!-- Fichiers JS / API FiveM -->
+   <script src="app.js"></script>
+
+</html>
